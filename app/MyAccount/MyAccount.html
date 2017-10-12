@@ -1,0 +1,21 @@
+<form name="myForm">
+  <label>
+    Введите ваше имя:
+  </label>
+  <input type="text" name="myField" id="username" ng-model="name" ng-minlength="5" ng-maxlength="20" required />
+  <label>
+    Введите email:
+  </label>
+  <input type="email" name="myField" id="email" ng-model="name" required>
+  <label>
+    Введите телефон (не обязательно):
+  </label>
+  <input type="tel" name="myField" id="phone" ng-model="name">
+  <input type="submit" value="ent">
+
+  <div ng-messages="myForm.myField.$error" ng-if="name.$dirty" style="color:maroon" role="alert">
+    <div ng-message="required">Обязательное поле</div>
+    <div ng-message="minlength">Значение слишком короткое</div>
+    <div ng-message="maxlength">Значение слишком длинное</div>
+  </div>
+</form>
