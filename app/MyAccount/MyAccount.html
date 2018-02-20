@@ -10,7 +10,7 @@
   <label>
     Введите телефон (не обязательно):
   </label>
-  <input type="tel" name="myField" id="phone" ng-model="name">
+  <input type="tel" name="myField" id="phone" ng-model="name" ng-pattern="vm.phone">
   <input type="submit" value="ent">
 
   <div ng-messages="myForm.myField.$error" ng-if="name.$dirty" style="color:maroon" role="alert">
