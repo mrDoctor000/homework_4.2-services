@@ -4,9 +4,9 @@ angular.module('myApp.menu', [
 ]);
 
 angular
-  .module('myApp.menu')
+  .module('myApp')
   .controller('menuCtrl', function($scope) {
-    this.menu = [
+    $scope.menu = [
       { name: 'Список', item: 'list' },
       { name: 'Добавить нового', item: 'createNewPokemon' },
       { name: 'Мой аккаунт', item: 'myaccount' }

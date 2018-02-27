@@ -3,8 +3,7 @@
 // Declare app level module which depends on views, and components
 angular.module('myApp', [
     'ui.router',
-    'ngMessages',
-    'myApp.menu'
+    'ngMessages'
   ])
   .config(function($stateProvider) {
 
