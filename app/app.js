@@ -40,5 +40,3 @@ angular.module('myApp', [
         controller: 'acconutCtrl as vm'
       });
   });
-
-;
